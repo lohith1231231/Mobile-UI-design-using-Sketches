@@ -1,0 +1,98 @@
+Convert these UI components into a responsive HTML, CSS, and JavaScript page:
+[
+  {
+    "type": "text_field",
+    "text": "~ 4 p p Q A r",
+    "position": {
+      "x": 224,
+      "y": 155
+    },
+    "size": {
+      "width": 728,
+      "height": 901
+    }
+  },
+  {
+    "type": "text_field",
+    "text": "A KPBA R",
+    "position": {
+      "x": 143,
+      "y": 106
+    },
+    "size": {
+      "width": 1062,
+      "height": 1338
+    }
+  },
+  {
+    "type": "text_field",
+    "text": "~ A KDBA R",
+    "position": {
+      "x": 131,
+      "y": 107
+    },
+    "size": {
+      "width": 1073,
+      "height": 1343
+    }
+  }
+]
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive UI Components</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .text-field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 600px;
+      }
+      .text-field input[type="text"] {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        max-width: 500px;
+      }
+      @media screen and (max-width: 768px) {
+        .text-field {
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-field">
+        <input type="text" placeholder="~ 4 p p Q A r">
+      </div>
+      <div class="text-field">
+        <input type="text" placeholder="A KPBA R">
+      </div>
+      <div class="text-field">
+        <input type="text" placeholder="~ A KDBA R">
+      </div>
+    </div>
+  </body>
+</html>
+```
